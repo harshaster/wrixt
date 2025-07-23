@@ -1,23 +1,24 @@
-# Writ
+# WriXt
 
-Opinionated, classless styles for semantic HTML.
+WriXt is a fork of [Writ CSS]("https://writ.cmcenroe.me/").
+
+Simplistic, responsive, classless styles for semantic <abbr>HTML</abbr> with inbuilt dark mode support.
 
 ## Usage
 
+Just copy the line below to the `head` tag of you HTML file
+
 ```html
-<!DOCTYPE html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="//writ.cmcenroe.me/1.0.4/writ.min.css">
+<link rel="stylesheet" href="https://wrixt.hrst.in/wrixt.min.css">
 ```
 
-[Full template][template]
-
-Writ is served through the CloudFlare CDN.
+or download the [full template here][template].
 
 [template]: template.html
 
 ## Goals
+
+These were the original goals of [writ](https://writ.cmcenroe.me/):
 
 - Drop-in stylesheet
   - No classes
@@ -25,7 +26,13 @@ Writ is served through the CloudFlare CDN.
 - Responsive, without special-casing
 - Visually pleasing
 
+They remain the same with wrixt.
+
 ## Motivation
+
+WriXt was born by extending Writ to support dark mode. I implemented dark mode using the latest CSS function [`light-dark`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark).
+		
+The original motivation of Writ was this:
 
 <abbr>HTML</abbr> is super easy to write. Markdown is even easier to write and
 generate <abbr>HTML</abbr> from. But what does it look like?
@@ -43,13 +50,15 @@ stylesheet makes it better.
 
 ## Caveats
 
-Writ is designed for modern, standards compliant browsers only. There are no
-compatibility hacks. Writ is tested on the latest stable releases of Safari,
-Chrome and Firefox.
+Writ was designed for modern, standards compliant browsers only. Same goes for WriXt. I have used the very
+new `light-dark` <abbr>CSS</abbr> function. So again, there are no
+compatibility hacks. Some things might (should not, i guess) break.
 
 ## License
 
 Copyright © 2015, Curtis McEnroe <curtis@cmcenroe.me>
+
+Modified in 2025 by Harshit Katiyar <harshitk31dec@gmail.com>
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above

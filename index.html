@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 
-<title>Writ</title>
+<head>
+  <title>WriXt</title>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="writ.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="wrixt.min.css">
 
-<header>
-  <h1>Writ</h1>
-  <p>Opinionated, classless styles for semantic <abbr>HTML</abbr></p>
+</head>
 
-  <nav>
-    <ul>
-      <li><a href="https://github.com/programble/writ">GitHub</a></li>
-      <li><a href="writ.css">CSS</a></li>
-      <li><a href="writ.min.css">Minified</a></li>
-      <li><a href="reference.html">Reference Page</a></li>
-    </ul>
-  </nav>
-</header>
+<body>
 
-<main>
-<h2 id="usage">Usage</h2>
-<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;//writ.cmcenroe.me/1.0.4/writ.min.css&quot;&gt;
+  <header>
+    <h1>WriXt</h1>
+    <p><i>WriXt is a fork of <a href="https://writ.cmcenroe.me/">Writ CSS</a>.</i></p>
+    <p>Simplistic, responsive, classless styles for semantic <abbr>HTML</abbr> with inbuilt dark mode support.
+    </p>
+
+
+    <nav>
+      <ul>
+        <li><a href="https://github.com/harshaster/wrixt">GitHub</a></li>
+        <li><a href="wrixt.css">CSS</a></li>
+        <li><a href="wrixt.min.css">Minified</a></li>
+        <li><a href="reference.html">Reference Page</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main><h2 id="usage">Usage</h2>
+<p>Just copy the line below to the <code>head</code> tag of you HTML file</p>
+<pre><code class="lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://wrixt.hrst.in/wrixt.min.css&quot;&gt;
 </code></pre>
-<p><a href="template.html">Full template</a></p>
-<p>Writ is served through the CloudFlare CDN.</p>
+<p>or download the <a href="template.html">full template here</a>.</p>
 <h2 id="goals">Goals</h2>
+<p>These were the original goals of <a href="https://writ.cmcenroe.me/">writ</a>:</p>
 <ul>
 <li>Drop-in stylesheet<ul>
 <li>No classes</li>
@@ -39,7 +44,10 @@
 <li>Responsive, without special-casing</li>
 <li>Visually pleasing</li>
 </ul>
+<p>They remain the same with wrixt.</p>
 <h2 id="motivation">Motivation</h2>
+<p>WriXt was born by extending Writ to support dark mode. I implemented dark mode using the latest CSS function <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark"><code>light-dark</code></a>.</p>
+<p>The original motivation of Writ was this:</p>
 <p><abbr>HTML</abbr> is super easy to write. Markdown is even easier to write and
 generate <abbr>HTML</abbr> from. But what does it look like?</p>
 <p style="text-align: center;">
@@ -53,11 +61,12 @@ stylesheet makes it better.</p>
 </p>
 
 <h2 id="caveats">Caveats</h2>
-<p>Writ is designed for modern, standards compliant browsers only. There are no
-compatibility hacks. Writ is tested on the latest stable releases of Safari,
-Chrome and Firefox.</p>
+<p>Writ was designed for modern, standards compliant browsers only. Same goes for WriXt. I have used the very
+new <code>light-dark</code> <abbr>CSS</abbr> function. So again, there are no
+compatibility hacks. Some things might (should not, i guess) break.</p>
 <h2 id="license">License</h2>
 <p>Copyright © 2015, Curtis McEnroe <a href="mailto:curtis@cmcenroe.me">curtis@cmcenroe.me</a></p>
+<p>Modified in 2025 by Harshit Katiyar <a href="mailto:harshitk31dec@gmail.com">harshitk31dec@gmail.com</a></p>
 <p>Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
 copyright notice and this permission notice appear in all copies.</p>
@@ -70,3 +79,4 @@ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</p>
 
 </main>
+</body>
